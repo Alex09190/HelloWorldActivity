@@ -24,10 +24,19 @@ class MainActivity : AppCompatActivity() {
         nameEditText = findViewById(R.id.nameEditText)
         
         // Respond to button click event per specifications
+        var nametext = nameEditText.text
 
+
+        var helloName :String = "Hello, $nametext"
+
+        clickMeButton.setOnClickListener {
+            displayTextView.text = helloName
+        }
 
     }
 }
+
+
 
 
 //Add an event listener to the button that is triggered when it is clicked that does the following
