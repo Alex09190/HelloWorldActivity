@@ -10,9 +10,8 @@ class MainActivity : AppCompatActivity() {
 
     // Declare view properties - the first one is done for you
     lateinit var displayTextView: TextView
-    lateinit var clickMeButton: TextView
-    lateinit var nameEditText: TextView
-
+    lateinit var clickMeButton: Button
+    lateinit var nameEditText: EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -29,3 +28,9 @@ class MainActivity : AppCompatActivity() {
 
     }
 }
+
+
+//Add an event listener to the button that is triggered when it is clicked that does the following
+//Get the entered text from the EditText
+//Create the string "Hello, <name>", where <name> is the value retrieved from the EditText in the previous step
+//Display the created string using the TextView
