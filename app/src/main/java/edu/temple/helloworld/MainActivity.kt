@@ -24,13 +24,15 @@ class MainActivity : AppCompatActivity() {
         nameEditText = findViewById(R.id.nameEditText)
         
         // Respond to button click event per specifications
-        var nametext = nameEditText.text
-
-
-        var helloName :String = "Hello, $nametext"
+        var nameText = ""
 
         clickMeButton.setOnClickListener {
+
+            nameText = nameEditText.text.toString()
+            var helloName :String = "Hello, $nameText"
             displayTextView.text = helloName
+
+
         }
 
     }
